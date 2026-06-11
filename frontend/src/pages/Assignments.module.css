@@ -1,0 +1,146 @@
+.page {
+    padding: 2rem;
+}
+
+.title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--purple-300);
+}
+
+.subTitle {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--purple-200);
+}
+
+.form {
+    background: var(--glass);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.form h3 {
+    margin-bottom: 0.4rem;
+    font-size: 1rem;
+    color: var(--purple-200);
+}
+
+.note {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    padding: 0.5rem 0.75rem;
+    background: rgba(124, 58, 237, 0.1);
+    border-left: 3px solid var(--purple-500);
+    border-radius: 0 6px 6px 0;
+}
+
+.formRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+@media (max-width: 600px) {
+    .formRow {
+        grid-template-columns: 1fr;
+    }
+}
+
+.form select {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.65rem 0.9rem;
+    color: var(--text);
+    font-size: 0.88rem;
+    outline: none;
+    width: 100%;
+}
+
+.form button {
+    background: var(--purple-600);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.7rem 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background: var(--purple-500);
+}
+
+.error {
+    color: var(--red);
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+.success {
+    color: var(--green);
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+.list {
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    background: var(--glass);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.cardRow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+}
+
+.label {
+    display: block;
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.2rem;
+}
+
+.value {
+    font-size: 0.88rem;
+    font-weight: 500;
+}
+
+.pagination {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+}
+
+.pagination button {
+    background: var(--purple-700);
+    border: none;
+    color: var(--text);
+    padding: 0.4rem 0.9rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.pagination button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --purple-900: #1a0a2e;
+    --purple-800: #2d1557;
+    --purple-700: #3d1f7a;
+    --purple-600: #6432c8;
+    --purple-500: #7c3aed;
+    --purple-400: #a855f7;
+    --purple-300: #c084fc;
+    --purple-200: #e9d5ff;
+    --accent: #e879f9;
+    --red: #f87171;
+    --green: #4ade80;
+    --yellow: #facc15;
+    --text: #f3e8ff;
+    --text-muted: #a78bca;
+    --border: rgba(124, 58, 237, 0.3);
+    --glass: rgba(45, 21, 87, 0.6);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--purple-900);
+    color: var(--text);
+    min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--purple-900);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--purple-600);
+    border-radius: 3px;
+}
